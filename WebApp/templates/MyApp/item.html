@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+{% if obj %}
+{% for i in obj %}<br>
+
+{{i.id}}:<a href="/home/dtail/{{i.id}}">{{i.itemname}}</a> <a href="/home/dlte/{{i.id}}/" style="color:red">DELETE</a>
+{%endfor %}<br>
+{% else %} <br>
+   No data created
+{% endif %}
+</body><br><br/>
+<a href="/home/cre/">ADD ITEM</a>
+</html>
