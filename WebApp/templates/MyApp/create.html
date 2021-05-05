@@ -7,7 +7,7 @@
 
 </head>
 <body>
-<form action="/home/pro/" method="post" enctype="multipart/form-data">
+<form action="/pro/" method="post" enctype="multipart/form-data">
     {% csrf_token %}
    ItemName: <input type="text" name="iname"><br><br>
    Ingredients:<input type="text" name="ingredients"><br><br>
@@ -17,4 +17,6 @@
 </form>
 </body>
 <a href="cre/"><input type="submit" value="Back"></a>
-</html>
+</html><br/><br/>
+
+<a href="/">LOGOUT</a>
